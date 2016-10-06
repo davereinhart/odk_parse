@@ -1,7 +1,7 @@
-import xml
+import xml.etree.ElementTree as ET
 import json
 
-tree = xml.etree.ElementTree.parse('sample_2016-10-04_15-05-09.xml')
+tree = ET.parse('sample_2016-10-04_15-05-09.xml')
 root = tree.getroot()
 
 data = {}
